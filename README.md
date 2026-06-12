@@ -25,7 +25,7 @@ An [AI Architect account](https://aiarchitect.atsign.com). Sign up at
 Install via the Cursor Marketplace or add this repository directly:
 
 1. Open Cursor → **Settings** → **Plugins**
-2. Search for **ai-architect** or submit the repository URL
+2. Search for **aiarchitect** or **Atsign**
 3. Enable the plugin — the MCP server connects automatically
 
 ## MCP server

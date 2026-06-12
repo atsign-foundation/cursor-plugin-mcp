@@ -9,6 +9,6 @@
   "homepage": "https://aiarchitect.atsign.com",
   "repository": "https://github.com/atsign-foundation/cursor-plugin-mcp",
   "license": "Apache-2.0",
-  "keywords": ["ai", "architecture", "atsign", "mcp", "blueprints", "security", "zero-trust"],
+  "keywords": ["aiarchitect", "atsign", "mcp", "blueprint", "security", "zero-trust"],
   "logo": "assets/logo.svg"
 }
