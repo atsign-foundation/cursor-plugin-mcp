@@ -4,13 +4,13 @@ A [Cursor Marketplace plugin](https://cursor.com/marketplace) that connects
 Cursor to [Atsign AI Architect](https://aiarchitect.atsign.com) via MCP
 (Model Context Protocol).
 
-AI Architect is a zero-attack-surface platform, independently evaluated by
-Broadband Testing, for designing, building, and managing secure AI
-architecture blueprints.
+AI Architect is a no code drag and drop web application that allows you to design "blueprints" that show the design and dataflows within your application or system in plain language.
+Once you are happy with the blueprint then you can export a prompt that includes all the skills needed to build the application, agents and APIs to bring the blueprint to life on the Atsign Platform. The Atsign Platform provides secure communications between components with no network attack surfaces. 
+ Applications and agents that are built using Atsign AI Architect can run on Windows, Mac, IoS, Android and Linux.  
 
 ## What this plugin does
 
-Registers the `ai-architect` MCP server so Cursor agents can interact with
+Registers the `aiarchitect` MCP server so Cursor agents can interact with
 AI Architect tools directly from the editor. Once installed, Cursor will
 connect to `https://aiarchitect.atsign.com/mcp` over SSE and expose all
 available AI Architect tools to the agent.
@@ -32,7 +32,7 @@ Install via the Cursor Marketplace or add this repository directly:
 
 | Field     | Value                                 |
 |-----------|---------------------------------------|
-| Name      | `ai-architect`                        |
+| Name      | `aiarchitect`                         |
 | URL       | `https://aiarchitect.atsign.com/mcp` |
 | Transport | SSE (Server-Sent Events)              |
 
