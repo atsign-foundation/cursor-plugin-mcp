@@ -1,0 +1,14 @@
+{
+  "name": "ai-architect",
+  "version": "1.0.0",
+  "description": "Connect Cursor to Atsign AI Architect — a zero-attack-surface platform for designing, building, and managing secure AI architecture blueprints.",
+  "author": {
+    "name": "Colin Constable",
+    "email": "colin@atsign.com"
+  },
+  "homepage": "https://aiarchitect.atsign.com",
+  "repository": "https://github.com/atsign-foundation/cursor-plugin-mcp",
+  "license": "Apache-2.0",
+  "keywords": ["ai", "architecture", "atsign", "mcp", "blueprints", "security", "zero-trust"],
+  "logo": "assets/logo.svg"
+}

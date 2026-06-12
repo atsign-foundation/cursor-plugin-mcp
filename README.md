@@ -1,78 +1,68 @@
-<!-- pyml disable-num-lines 4 md013,md033-->
-<h1><a href="https://atsign.com#gh-light-mode-only">
-   <img width=250px src="https://atsign.com/wp-content/uploads/2022/05/atsign-logo-horizontal-color2022.svg#gh-light-mode-only" alt="The Atsign Foundation"></a>
-<a href="https://atsign.com#gh-dark-mode-only">
-   <img width=250px src="https://atsign.com/wp-content/uploads/2023/08/atsign-logo-horizontal-reverse2022-Color.svg#gh-dark-mode-only" alt="The Atsign Foundation"></a></h1>
+# AI Architect — Cursor Plugin
 
-# Sample README
+A [Cursor Marketplace plugin](https://cursor.com/marketplace) that connects
+Cursor to [Atsign AI Architect](https://aiarchitect.atsign.com) via MCP
+(Model Context Protocol).
 
-Open with intent - we welcome contributions - we want pull requests and to
-hear about issues.
+AI Architect is a zero-attack-surface platform, independently evaluated by
+Broadband Testing, for designing, building, and managing secure AI
+architecture blueprints.
 
-## Who is this for?
+## What this plugin does
 
-The README should be addressed to somebody who's never seen this before.
-But also don't assume that they're a novice.
+Registers the `ai-architect` MCP server so Cursor agents can interact with
+AI Architect tools directly from the editor. Once installed, Cursor will
+connect to `https://aiarchitect.atsign.com/mcp` over SSE and expose all
+available AI Architect tools to the agent.
 
-### Code user
+## Prerequisites
 
-Does this repo publish to [pub.dev](https://pub.dev) or similar?
-In which case the code user just needs a pointer there - e.g. [at_client on pub.dev](https://pub.dev/packages/at_client)
+An [AI Architect account](https://aiarchitect.atsign.com). Sign up at
+<https://aiarchitect.atsign.com>.
 
-### Contributor
+## Installation
 
-This is the person who we want working with us here.
-[CONTRIBUTING.md](CONTRIBUTING.md) is going to have the detailed guidance
-on how to setup their tools, tests and how to make a pull request.
+Install via the Cursor Marketplace or add this repository directly:
 
-## Why, What, How?
+1. Open Cursor → **Settings** → **Plugins**
+2. Search for **ai-architect** or submit the repository URL
+3. Enable the plugin — the MCP server connects automatically
 
-### Why?
+## MCP server
 
-What is the purpose of this project?
+| Field     | Value                                 |
+|-----------|---------------------------------------|
+| Name      | `ai-architect`                        |
+| URL       | `https://aiarchitect.atsign.com/mcp` |
+| Transport | SSE (Server-Sent Events)              |
 
-### What?
+> **Note:** The MCP server at `https://aiarchitect.atsign.com/mcp` requires an
+> active AI Architect session. Users must be signed in to their account at
+> [aiarchitect.atsign.com](https://aiarchitect.atsign.com) for the connection
+> to authenticate successfully.
 
-What is needed to get the project and its dependencies installed?
+## Repository structure
 
-### How?
+```
+.cursor-plugin/plugin.json   # Cursor plugin manifest
+mcp.json                     # MCP server definition
+assets/logo.svg              # Plugin logo
+README.md
+```
 
-How does this work? How is this used to fulfil its intended purpose?
+## Security
 
-## Checklist
+See [SECURITY.md](SECURITY.md).
 
-### Writing
+## License
 
-Does the writing flow, with proper grammar and correct spelling?
+Apache 2.0 — see [LICENSE](LICENSE).
 
-### Links
+## Acknowledgement/Attribution
 
-Are the links to external resources correct?
-Are the links to other parts of the project correct
-(beware stuff carried over from previous repos where the
-project might have lived during earlier development)?
-
-### Description
-
-Has the Description field been filled out?
-
-### Acknowledgement/Attribution
-
-Have we correctly acknowledged the work of others (and their Trademarks etc.)
-where appropriate (per the conditions of their LICENSE?
-
-### LICENSE
-
-Which LICENSE are we using?  
-Is the LICENSE(.md) file present?  
-Does it have the correct dates, legal entities etc.?
+AI Architect and the Atsign brand are trademarks of Atsign Limited.
+The plugin logo is sourced from [aiarchitect.atsign.com](https://aiarchitect.atsign.com).
 
 ## Maintainers
 
-Who created this?  
-
-Do they have complete GitHub profiles?  
-
-How can they be contacted?  
-
-Who is going to respond to pull requests?  
+Maintained by [@cconstab](https://github.com/cconstab).
